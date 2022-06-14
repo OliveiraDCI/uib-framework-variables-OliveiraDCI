@@ -8,7 +8,7 @@ a {
   text-decoration: none;
   &:link,
   &:visited {
-    color: v.$color-nav-footer;
+    color: inherit;
   }
   &:hover,
   &:active {
