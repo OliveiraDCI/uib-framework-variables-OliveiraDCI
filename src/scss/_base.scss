@@ -1,3 +1,17 @@
+@use "variables" as v;
+
 body {
-  background-color: #666;
+  background-color: v.$color-old-white;
+}
+
+a {
+  text-decoration: none;
+  &:link,
+  &:visited {
+    color: v.$color-nav-footer;
+  }
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
 }
