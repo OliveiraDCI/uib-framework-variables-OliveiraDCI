@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font: normal 1.2rem/1.2 sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+a:link, a:visited {
+  color: inherit;
+}
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0.7em;
+  color: #016690;
+}
+
+.hero {
+  position: relative;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20vh;
+  text-align: center;
+}
+.hero h1 {
+  padding-top: 1em;
+  color: #016690;
+}
+.hero::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(154, 205, 50, 0.2);
+}
+
+main .section-one {
+  padding: 0 0.8em;
+}
+main .section-one .card {
+  margin: 1.5em 0;
+  padding: 1em;
+  background: #e0ddb2;
+  border-radius: 10px;
+}
+main .section-one h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-top: 0.5em;
+}
+main .section-one p {
+  font-size: 0.8rem;
+}
+main .section-two {
+  padding: 0 0.8em;
+}
+main .section-two div:nth-child(odd) {
+  border: 2px solid #dad6ab;
+}
+main .section-two div {
+  padding: 0.8em;
+  margin-bottom: 0.8em;
+}
+main .section-two div h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+main .section-two div p {
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+footer {
+  font-size: 0.8rem;
+  background-color: #016690;
+}
+footer ul {
+  list-style-type: none;
+  text-align: center;
+}
+footer ul li {
+  display: inline-block;
+  padding: 0.7em;
+  color: antiquewhite;
+}
+
+@media (min-width: 580px) {
+  nav ul {
+    text-align: end;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  main .section-one {
+    width: 600px;
+    margin: 0 auto;
+  }
+  main .section-one .card {
+    display: flex;
+    gap: 1em;
+    margin: 0.5em 0;
+    padding: 1em;
+    background: #e0ddb2;
+    border-radius: 10px;
+  }
+  main .section-one .card img {
+    width: 150px;
+    height: 130px;
+  }
+  main .section-one .card h2 {
+    margin-bottom: 0.5em;
+  }
+  main .section-two {
+    padding: 0 0.8em;
+    display: flex;
+  }
+  main .section-two div p {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+}
+@media (min-width: 1025px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .flex p {
+    width: 300px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  main .section-one {
+    width: 550px;
+    margin: 2em auto;
+  }
+  main .section-one .card {
+    display: flex;
+    gap: 1em;
+    margin: 0.5em 0;
+    padding: 1em;
+    background: #e0ddb2;
+    border-radius: 10px;
+  }
+  main .section-one .card img {
+    width: 150px;
+    height: 130px;
+  }
+  main .section-one .card h2 {
+    margin-bottom: 0.5em;
+  }
+  main .section-one .mq-desktop {
+    display: flex;
+    flex-direction: column;
+  }
+  main .section-two {
+    padding: 0 0.8em;
+    display: flex;
+  }
+  main .section-two div:nth-child(odd) {
+    width: 800px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
