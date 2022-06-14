@@ -10,5 +10,10 @@
 
 html {
   font-size: 62.5%;
-  font: normal 1.2rem/1.5 v.$font-stack;
+  font: normal 1.2rem/1.2 v.$font-stack;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
